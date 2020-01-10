@@ -59,7 +59,7 @@ sender_email = 'fill_me_in'
 password = 'fill_me_in'
 
 # for the optimists who expected the script to run without configuration
-if any(x == 'fill_me_in' for x in [receiver_email, sender_email, password]):
+if any(x == 'fill_me_in' for x in (receiver_email, sender_email, password)):
 	raise ValueError('make sure you fill in the script parameters')
 
 # precompile regex for speed
